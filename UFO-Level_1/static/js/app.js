@@ -2,7 +2,7 @@
 var tableData = data;
 
 // YOUR CODE HERE!
-var tbody = d3.select("tbody");
+var tbody = d3.select("#SpaceData");
 console.log(data)
 data.forEach(function(SpaceData) {
     console.log(SpaceData);
@@ -15,4 +15,3 @@ data.forEach(function(SpaceData) {
     cell.text(value);
     });
 });
-

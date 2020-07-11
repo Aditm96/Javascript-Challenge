@@ -999,11 +999,18 @@ var data = [{
   }
 ];
 
-function getYearData(Target) {
-  return Target.datetime == "1/4/2010";
+function ReturnMultipleData(Targets) {
+  return Targets.datetime == "1/10/2010" && Targets.country == "us" && Targets.state == "ca";
 }
 
-var ReturnDate = data.filter(getYearData);
+var ReturnTargets = data.filter(ReturnMultipleData);
+console.log(ReturnTargets)
 
-console.log(ReturnDate)
+//function getYearData(Target) {
+  //return Target.datetime == "1/4/2010";
+//}
+
+//var ReturnDate = data.filter(getYearData);
+
+//console.log(ReturnDate)
 
